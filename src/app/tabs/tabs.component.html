@@ -1,0 +1,18 @@
+
+{{topicId}}
+<nz-tabset nzLinkRouter>
+
+    <nz-tab>
+        <a *nzTabLink nz-tab-link [routerLink]="['/home/tab-panel/' + topicId + '/tab/one']" queryParamsHandling="merge">
+            Default
+        </a>
+        Default.
+    </nz-tab>
+    <nz-tab>
+        <a *nzTabLink nz-tab-link [routerLink]="['/home/tab-panel/' + topicId + '/tab/two']" queryParamsHandling="merge">
+            Two
+        </a>
+        Two.
+    </nz-tab>
+
+</nz-tabset>
